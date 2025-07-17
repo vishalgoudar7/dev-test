@@ -244,7 +244,7 @@ const API_CONFIG = {
     }
   },
   // 🔁 Switch between 'beta' or 'live' here
-  current: 'live'
+  current: 'beta'
 };
 
 // ✅ Get current server settings
