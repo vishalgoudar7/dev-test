@@ -6,7 +6,7 @@ import { FaUser, FaPhone, FaPen } from "react-icons/fa";
 import "../styles/ProfilePage.css";
 
 const ProfilePage = () => {
-  const { user, profile, logOut } = useUserAuth();
+  const { profile, logOut } = useUserAuth();
   const [localProfile, setLocalProfile] = useState(profile || {});
   const [showConfirm, setShowConfirm] = useState(false);
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ const ProfilePage = () => {
         <div className="user-compact-warning">
           <p>Please complete your profile</p>
           <Link to="/profile/edit" className="user-compact-warning-link">
-            &gt;
+            {'>'}
           </Link>
         </div>
       )}
@@ -90,7 +90,7 @@ const ProfilePage = () => {
       {/* Logout Button */}
       <div className="logout-center">
         <button className="logout-text-btn" onClick={() => setShowConfirm(true)}>
-          [-> Logout
+          Logout
         </button>
       </div>
 

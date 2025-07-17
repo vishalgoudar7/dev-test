@@ -4,11 +4,9 @@ import 'react-day-picker/dist/style.css';
 import { useUserAuth } from '../context/UserAuthContext';
 import {
   fetchConstants,
-  submitBulkPoojaRequest,
   fetchRazorpayKey,
   confirmPayment,
-  loadRazorpayScript,
-  constructBulkPoojaPayload
+  loadRazorpayScript
 } from '../api/poojaService';
 import '../styles/PaymentCheckoutModal.css';
 
@@ -76,7 +74,6 @@ const PaymentCheckoutModal = ({ open, onClose }) => {
   const [showConfirm, setShowConfirm] = useState(false);
   const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [constants, setConstants] = useState(null);
   const [minBookingDate, setMinBookingDate] = useState(new Date());
 
   const [address, setAddress] = useState({
@@ -119,7 +116,6 @@ const PaymentCheckoutModal = ({ open, onClose }) => {
     const loadConstants = async () => {
       try {
         const constantsData = await fetchConstants();
-        setConstants(constantsData);
         
         // Set minimum booking date based on constants
         if (constantsData.pooja_booking_min_csc_estore) {

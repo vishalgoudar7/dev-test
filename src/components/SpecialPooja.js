@@ -71,7 +71,7 @@
 
 // src/pages/SpecialPooja.js
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import api from "../api/api";
 import "../styles/SpecialPooja.css";
@@ -83,11 +83,7 @@ const SpecialPooja = () => {
   const navigate = useNavigate();
   const [subCategories, setSubCategories] = useState([]);
 
-  useEffect(() => {
-    if (id) fetchCategoryDetails();
-  }, [id]);
-
-  const fetchCategoryDetails = async () => {
+  const fetchCategoryDetails = useCallback(async () => {
     try {
       const res = await api.get(`category/?id=${id}`);
       const category = res.data.results.find((cat) => cat.id === parseInt(id));
@@ -97,7 +93,11 @@ const SpecialPooja = () => {
     } catch (error) {
       console.error("API fetch error:", error);
     }
-  };
+  }, [id]);
+
+  useEffect(() => {
+    if (id) fetchCategoryDetails();
+  }, [id, fetchCategoryDetails]);
 
   const handleViewDetails = (categoryId, subId) => {
     navigate(`/List/category/${categoryId}/sub_category/${subId}`);

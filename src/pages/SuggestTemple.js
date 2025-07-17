@@ -1,12 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { setsignInMbl } from "../redux/authSlice";
 import api from "../api/api";
 import "../styles/SuggestTemple.css";
 
 const SuggestTemple = () => {
   const dispatch = useDispatch();
-  const isSignedIn = useSelector((state) => state.auth.signInMbl);
 
   const [suggest, setSuggest] = useState({
     name_en: "",
@@ -25,8 +24,6 @@ const SuggestTemple = () => {
   const [panditNumber, setPanditNumber] = useState("");
   const [selectedGod, setSelectedGod] = useState("");
   const [gods, setGods] = useState([]);
-  const [image, setImage] = useState(null);
-  const [video, setVideo] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
   const [previewVideo, setPreviewVideo] = useState(null);
   const [imageTitle, setImageTitle] = useState("");
@@ -35,8 +32,6 @@ const SuggestTemple = () => {
   const [videoId, setVideoId] = useState("");
   const [alert, setAlert] = useState(false);
   const [error, setError] = useState({});
-
-  const fileInputRef = useRef();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,7 +55,6 @@ const SuggestTemple = () => {
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
-    setImage(file);
     setPreviewImage(URL.createObjectURL(file));
 
     const formData = new FormData();
@@ -79,7 +73,6 @@ const SuggestTemple = () => {
   const handleVideoUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
-    setVideo(file);
 
     const formData = new FormData();
     formData.append("title_en", videoTitle || "Temple Video");

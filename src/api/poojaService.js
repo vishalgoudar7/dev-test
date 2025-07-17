@@ -223,7 +223,7 @@ export const constructBulkPoojaPayload = (cart, address, profile) => {
   };
 };
 
-export default {
+const poojaService = {
   fetchPoojas,
   fetchConstants,
   requestPooja,
@@ -234,3 +234,5 @@ export default {
   loadRazorpayScript,
   constructBulkPoojaPayload
 };
+
+export default poojaService;

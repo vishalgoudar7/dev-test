@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import api from "../api/api";
 import "../styles/MyBookings.css";
 import Pagination from "../components/Pagination";
@@ -15,15 +15,7 @@ const MyBookings = () => {
 
   const [bookings, setBookings] = useState([]);
 
-  useEffect(() => {
-    getBookings();
-  }, [meta.page]);
-//   useEffect(() => {
-//   getBookings();
-// }, [getBookings]); // or disable warning if intentional
-
-
-  const getBookings = async () => {
+  const getBookings = useCallback(async () => {
     try {
       const response = await api.get(
         `/devotee/pooja_request/list/?page=${meta.page}&size=${meta.size}&search=${meta.search}`
@@ -39,7 +31,11 @@ const MyBookings = () => {
     } catch (error) {
       console.warn("Failed to load bookings", error);
     }
-  };
+  }, [meta.page, meta.size, meta.search]);
+
+  useEffect(() => {
+    getBookings();
+  }, [getBookings]);
 
   const onPageChange = (page) => {
     setMeta((prev) => ({ ...prev, page }));
