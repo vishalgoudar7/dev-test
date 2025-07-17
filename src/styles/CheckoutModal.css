@@ -1,0 +1,312 @@
+/* Confirm close overlay and dialog */
+.checkout-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-confirm-dialog {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 32px 24px 32px;
+  min-width: 340px;
+  max-width: 90vw;
+  text-align: center;
+}
+.checkout-confirm-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.checkout-confirm-message {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+.checkout-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+/* Modal header bar: logo left, title center, close right */
+.checkout-modal-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 24px 0 16px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  z-index: 200;
+}
+.checkout-modal-logo {
+  height: 38px;
+  width: auto;
+  margin-right: 8px;
+  object-fit: contain;
+}
+.checkout-modal-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+.checkout-modal-top-close-btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+.checkout-modal-address-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #444;
+  padding-left: 2px;
+}
+/* Top right close button for modal */
+.checkout-modal-top-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.checkout-modal-content {
+  position: relative;
+  padding-top: 64px;
+}
+.checkout-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-modal {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  width: 900px;
+  max-width: 98vw;
+  min-height: 480px;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.checkout-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #fff0f0;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  color: #d32f2f;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-modal-content {
+  display: flex;
+  flex: 1;
+  min-height: 420px;
+}
+.checkout-modal-left {
+  flex: 1.1;
+  padding: 36px 28px 24px 36px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 320px;
+}
+.checkout-modal-left-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.checkout-modal-close-btn {
+  background: #fff0f0;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #d32f2f;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.checkout-modal-close-btn:hover {
+  background: #ffeaea;
+}
+.checkout-modal-left-scroll {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 420px;
+  padding-right: 4px;
+}
+.checkout-modal-left h4 {
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.checkout-address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.checkout-form-row label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.checkout-error {
+  color: #d32f2f;
+  font-size: 0.92rem;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight: 400;
+}
+.checkout-form-row {
+  display: flex;
+  gap: 10px;
+}
+.checkout-address-form input, .checkout-address-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.checkout-proceed-btn {
+  margin-top: 24px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+.checkout-proceed-btn:hover {
+  background: #b71c1c;
+}
+.checkout-modal-right {
+  flex: 1;
+  padding: 36px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.checkout-modal-right h5 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.checkout-cart-list {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 18px;
+}
+.checkout-cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkout-cart-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.checkout-cart-info {
+  flex: 1;
+}
+.checkout-cart-title {
+  font-weight: 500;
+}
+.checkout-cart-qty {
+  font-size: 0.95rem;
+  color: #888;
+}
+.checkout-cart-price {
+  font-weight: 500;
+  min-width: 60px;
+  text-align: right;
+}
+.checkout-cart-summary {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+.checkout-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+.checkout-summary-total {
+  font-weight: 700;
+  color: #d32f2f;
+  font-size: 1.1rem;
+}

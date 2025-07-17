@@ -1,0 +1,195 @@
+.temple-container {
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.temple-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 800px;  /* Wider container */
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.search-container .form-control {
+  padding: 10px;
+  width: 68%; /* Slightly reduced width to make the input field shorter */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  height: 49px; /* Ensure input field has the same height as the button */
+}
+
+.search-container .btn-primary {
+  padding: 12px 20px; /* Larger padding to make the button look more square */
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 48px; /* Ensured button height is 48px to align with the input field */
+  width: 86px; /* Set width to match height for a more square-like button */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Ensures the text is centered inside the button */
+  align-items: center; /* Centers the text vertically */
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.temple-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+}
+
+.temple-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.temple-location {
+  font-size: 1.1rem; /* Increased font size */
+  color: #555;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.location-icon {
+  color: #f44336;
+}
+
+.btn-outline-primary {
+  margin-top: auto; 
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.btn-outline-primary:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination-container .btn {
+  min-width: 45px;
+  height: 45px;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.pagination-container .btn-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.pagination-container .btn-outline-primary,
+.pagination-container .btn-outline-secondary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.pagination-container .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+  .temple-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .temple-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

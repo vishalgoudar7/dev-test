@@ -1,0 +1,425 @@
+/* Payment Checkout Modal Styles */
+
+/* Confirm close overlay and dialog */
+.payment-checkout-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-checkout-confirm-dialog {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 32px 24px 32px;
+  min-width: 340px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.payment-checkout-confirm-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.payment-checkout-confirm-message {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.payment-checkout-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Modal header bar: logo left, title center, close right */
+.payment-checkout-modal-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 24px 0 16px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  z-index: 200;
+  border-radius: 20px 20px 0 0;
+}
+
+.payment-checkout-modal-logo {
+  height: 38px;
+  width: auto;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+.payment-checkout-modal-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.payment-checkout-modal-top-close-btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.payment-checkout-modal-top-close-btn:hover {
+  color: #d32f2f;
+}
+
+.payment-checkout-modal-address-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #444;
+  padding-left: 2px;
+}
+
+/* Modal overlay and main container */
+.payment-checkout-modal-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-checkout-modal {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  width: 900px;
+  max-width: 98vw;
+  min-height: 480px;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.payment-checkout-modal-content {
+  display: flex;
+  flex: 1;
+  min-height: 420px;
+  padding-top: 64px;
+  position: relative;
+}
+
+/* Left side - Address form */
+.payment-checkout-modal-left {
+  flex: 1.1;
+  padding: 36px 28px 24px 36px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 320px;
+}
+
+.payment-checkout-modal-left-scroll {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 420px;
+  padding-right: 4px;
+}
+
+/* Address card styles */
+.address-card {
+  transition: all 0.2s ease;
+}
+
+.address-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+}
+
+/* Form styles */
+.payment-checkout-modal-left .form-control {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.payment-checkout-modal-left .form-control:focus {
+  border-color: #c1440e;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(193, 68, 14, 0.1);
+}
+
+.payment-checkout-modal-left label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.checkout-error {
+  color: #d32f2f;
+  font-size: 0.92rem;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.payment-checkout-proceed-btn {
+  margin-top: 24px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.payment-checkout-proceed-btn:hover:not(:disabled) {
+  background: #b71c1c;
+  transform: translateY(-1px);
+}
+
+.payment-checkout-proceed-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Right side - Cart summary */
+.payment-checkout-modal-right {
+  flex: 1;
+  padding: 36px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fafafa;
+}
+
+.payment-checkout-modal-right h5 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-checkout-cart-list {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 18px;
+  padding-right: 4px;
+}
+
+.payment-checkout-cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.payment-checkout-cart-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.payment-checkout-cart-info {
+  flex: 1;
+}
+
+.payment-checkout-cart-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.payment-checkout-cart-qty {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Cart summary */
+.payment-checkout-cart-summary {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.payment-checkout-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.payment-checkout-summary-row span:first-child {
+  color: #666;
+}
+
+.payment-checkout-summary-row span:last-child {
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-checkout-summary-total {
+  font-weight: 700 !important;
+  color: #d32f2f !important;
+  font-size: 1.1rem !important;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.payment-checkout-summary-total span {
+  color: #d32f2f !important;
+  font-weight: 700 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .payment-checkout-modal {
+    width: 95vw;
+    height: 90vh;
+    max-height: 90vh;
+  }
+  
+  .payment-checkout-modal-content {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .payment-checkout-modal-left {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px 16px;
+  }
+  
+  .payment-checkout-modal-right {
+    padding: 20px 16px;
+  }
+  
+  .payment-checkout-modal-left-scroll {
+    max-height: none;
+  }
+  
+  .row .col-md-4 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-checkout-modal-header-bar {
+    padding: 0 16px 0 12px;
+  }
+  
+  .payment-checkout-modal-title {
+    font-size: 1.1rem;
+  }
+  
+  .payment-checkout-modal-logo {
+    height: 32px;
+  }
+  
+  .payment-checkout-confirm-dialog {
+    margin: 16px;
+    padding: 24px 20px;
+  }
+}
+
+/* Loading state */
+.payment-checkout-proceed-btn:disabled {
+  position: relative;
+}
+
+.payment-checkout-proceed-btn:disabled::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Scrollbar styling */
+.payment-checkout-modal-left-scroll::-webkit-scrollbar,
+.payment-checkout-cart-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.payment-checkout-modal-left-scroll::-webkit-scrollbar-track,
+.payment-checkout-cart-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.payment-checkout-modal-left-scroll::-webkit-scrollbar-thumb,
+.payment-checkout-cart-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.payment-checkout-modal-left-scroll::-webkit-scrollbar-thumb:hover,
+.payment-checkout-cart-list::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}

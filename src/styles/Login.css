@@ -1,0 +1,119 @@
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+} 
+
+
+/* Background with gradient */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.login-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* .login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+} */
+
+.phone-input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.country-code {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  background: #f9f9f9;
+  min-width: 75px;
+}
+
+.input-field {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 0 8px 8px 0;
+  outline: none;
+  width: 100%;
+}
+
+.input-field-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-field.with-icon {
+  padding-right: 40px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin: 10px 0;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #222;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  color: #333;
+}
+
+.btn-google {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.google-icon {
+  font-size: 22px;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  color: #aaa;
+}

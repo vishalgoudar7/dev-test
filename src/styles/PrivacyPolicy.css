@@ -1,0 +1,57 @@
+/* styles/PrivacyPolicy.css */
+
+.privacy-wrapper {
+  padding: 30px 0;
+  background-color: #f9f9f9;
+}
+
+.privacy-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.privacy-banner {
+  width: 80%; /* Full width of the container */
+  display: block;
+  margin-bottom: 20px;
+   margin: 0 auto 20px auto;
+}
+
+.privacy-content {
+  width: 80%; /* Ensure content takes the full width below the image */
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-content h5,
+.privacy-content h6 {
+  margin-top: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.privacy-content p,
+.privacy-content li {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.privacy-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.privacy-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}

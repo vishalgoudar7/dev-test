@@ -1,0 +1,113 @@
+.About {
+  padding: 40px 20px;
+}
+
+.responsive-container-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.bigContainer {
+  flex-direction: column;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ultimateImg {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.purpleBox {
+  background-color: rgba(118, 81, 222, 0.9);
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.purpleText {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.stars {
+  width: 100px;
+}
+
+.allText {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.headingText {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subHeadingText {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  color: #ef5b0c;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ef5b0c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.section-title h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+}
+
+.cardio {
+  padding: 20px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 0 0 30%;
+}
+
+.team-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}

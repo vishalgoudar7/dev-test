@@ -1,0 +1,78 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffe9d2, #f05a0e);
+    padding: 1rem;
+}
+
+.auth-box {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.auth-box h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control,
+.auth-box .PhoneInputInput {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.form-control:focus,
+.auth-box .PhoneInputInput:focus {
+    border-color: #f05a0e;
+    box-shadow: none;
+    outline: none;
+}
+
+.orange-btn {
+    background-color: #f05a0e;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+}
+
+.orange-btn:hover {
+    background-color: #d44c0c;
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    color: #333;
+}
+
+.link-orange {
+    color: #f05a0e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-orange:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

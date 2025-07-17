@@ -1,0 +1,81 @@
+.do_section {
+  background-color: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.heading_container h2 {
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.heading_container p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item-wrapper {
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    transition: transform .6s ease-in-out;
+}
+
+.event-card {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.caption {
+  background-color: rgb(13 0 99);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 94, 0);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+

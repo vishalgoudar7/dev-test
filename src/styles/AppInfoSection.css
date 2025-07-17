@@ -1,0 +1,66 @@
+/* src/styles/AppInfoSection.css */
+
+.app-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #732c85;
+  color: white;
+  padding: 60px 40px;
+}
+
+.app-info-left {
+  flex: 1 1 40%;
+  min-width: 280px;
+  padding-right: 40px;
+}
+
+.app-info-left .subheading {
+  color: #d4b3e3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.app-info-left h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.app-info-left .description {
+  font-size: 16px;
+  color: #f5e6fb;
+}
+
+.app-info-right {
+  flex: 1 1 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info-item {
+  flex: 0 1 45%;
+  text-align: center;
+}
+
+.info-item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.info-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #f5e6fb;
+  line-height: 1.4;
+}
+

@@ -1,0 +1,86 @@
+/* Carousel Section */
+.homepage {
+  background-color: #fef5ec;
+  padding: 40px 20px;
+}
+
+/* Main Flex Row */
+.homepage-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ef5b0c;
+  margin-bottom: 20px;
+}
+
+/* Left Column: Carousel */
+.homepage-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.event-carousel-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 100%;
+}
+
+.event-carousel-box img {
+  border-radius: 8px;
+}
+
+/* Right Column: Banner & Downloads */
+.homepage-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+}
+
+.download-buttons img {
+  width: 150px;
+  height: 45px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.download-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .homepage-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-left,
+  .homepage-right {
+    width: 100%;
+    text-align: center;
+  }
+}

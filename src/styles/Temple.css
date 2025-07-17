@@ -1,0 +1,135 @@
+.main {
+  background-color: #ffffff;
+}
+
+.section.pt-0 {
+  background-color: #fde5d1;
+}
+
+.card.bg-light {
+  background-color: #f5f5f6;
+  padding: 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: #f5f5f6;
+  padding: 1.25rem;
+}
+
+.card-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+  padding: 0;
+}
+
+.nav-tabs.nav-bottom-line.nav-responsive {
+  border: none;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-bottom: 0;
+  color: #000;
+}
+
+.nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+  margin-bottom: 0;
+}
+
+.card.bg-transparent {
+  border: 1px solid #000000;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem 1.25rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.bg-blur {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.form-control-lg {
+  padding-left: 2rem;
+  font-size: 1.25rem;
+}
+
+.btn-lg.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.card.shadow.h-100 {
+  height: 100%;
+}
+
+.list-group.list-group-borderless {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.list-group-item {
+  padding-bottom: 0;
+}
+
+.list-group-item.small {
+  font-size: 0.875rem;
+}
+
+.pooja-image {
+  border: 5px solid #ef5b0c;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-sm.btn-primary i {
+  font-size: 16px;
+  margin-left: 0.5rem;
+}
+
+.dialtag {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

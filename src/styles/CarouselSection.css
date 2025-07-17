@@ -1,0 +1,19 @@
+/* src/styles/CarouselSection.css */
+
+.carousel-wrapper {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.event-carousel-box img {
+  border-radius: 12px;
+  object-fit: cover;
+  height: 350px;
+}
+
+.heading_container h2 {
+  color: #ef5b0c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}

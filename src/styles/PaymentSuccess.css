@@ -1,0 +1,480 @@
+/* Payment Success Page Styles */
+
+.payment-success-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.payment-success-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 48px 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+/* Success State */
+.payment-success-icon {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-success-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin-bottom: 16px;
+}
+
+.payment-success-message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Failure State */
+.payment-failure-icon {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-failure-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f44336;
+  margin-bottom: 16px;
+}
+
+.payment-failure-message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.payment-error-details {
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.payment-error-text {
+  color: #d32f2f;
+  font-size: 0.95rem;
+  margin: 0;
+  text-align: left;
+}
+
+/* Unknown State */
+.payment-unknown-icon {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-unknown-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 16px;
+}
+
+.payment-unknown-message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Payment Details */
+.payment-success-details {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.payment-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.payment-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.payment-detail-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.payment-detail-value {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  font-family: 'Courier New', monospace;
+  background: #e9ecef;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+.payment-success-actions {
+  margin-bottom: 32px;
+}
+
+.payment-success-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 0 8px 12px 8px;
+  min-width: 160px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.payment-success-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.payment-success-btn:active {
+  transform: translateY(0);
+}
+
+/* Button Variants */
+.btn-primary.payment-success-btn {
+  background: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+}
+
+.btn-primary.payment-success-btn:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-primary.payment-success-btn {
+  background: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary.payment-success-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-danger.payment-success-btn {
+  background: #dc3545;
+  border: 1px solid #dc3545;
+  color: #fff;
+}
+
+.btn-danger.payment-success-btn:hover {
+  background: #c82333;
+  border-color: #c82333;
+}
+
+.btn-outline-secondary.payment-success-btn {
+  background: transparent;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary.payment-success-btn:hover {
+  background: #6c757d;
+  color: #fff;
+}
+
+/* Support Information */
+.payment-support-info {
+  border-top: 1px solid #e9ecef;
+  padding-top: 24px;
+}
+
+.payment-support-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.payment-support-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.payment-support-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-success-container {
+    padding: 16px;
+  }
+  
+  .payment-success-card {
+    padding: 32px 24px;
+  }
+  
+  .payment-success-title,
+  .payment-failure-title,
+  .payment-unknown-title {
+    font-size: 1.5rem;
+  }
+  
+  .payment-success-message,
+  .payment-failure-message,
+  .payment-unknown-message {
+    font-size: 1rem;
+  }
+  
+  .payment-success-btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 12px 0;
+    min-width: auto;
+  }
+  
+  .payment-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .payment-detail-value {
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-success-card {
+    padding: 24px 16px;
+  }
+  
+  .payment-success-title,
+  .payment-failure-title,
+  .payment-unknown-title {
+    font-size: 1.25rem;
+  }
+  
+  .payment-success-details {
+    padding: 16px;
+  }
+}
+
+/* Animation */
+.payment-success-card {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icon animations */
+.payment-success-icon svg,
+.payment-failure-icon svg,
+.payment-unknown-icon svg {
+  animation: scaleIn 0.6s ease-out 0.2s both;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Success checkmark animation */
+.payment-success-icon svg polyline {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: checkmark 0.8s ease-out 0.5s both;
+}
+
+@keyframes checkmark {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Booking Details Styles */
+.booking-loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.booking-details-section {
+  margin: 24px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.booking-details-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.booking-info-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.temple-image {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.temple-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.booking-detail-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.booking-detail-value {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* UPI Payment Section */
+.upi-payment-section {
+  margin-top: 16px;
+  padding: 16px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.upi-payment-section h4 {
+  color: #856404;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.upi-payment-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.upi-payment-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Design for Booking Details */
+@media (max-width: 768px) {
+  .booking-details-section {
+    margin: 16px 0;
+    padding: 16px;
+  }
+  
+  .booking-info-card {
+    padding: 12px;
+  }
+  
+  .temple-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .booking-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  
+  .booking-detail-label {
+    font-size: 0.8rem;
+  }
+  
+  .booking-detail-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  
+  .upi-payment-section {
+    padding: 12px;
+  }
+  
+  .upi-payment-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}

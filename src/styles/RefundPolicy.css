@@ -1,0 +1,37 @@
+.refund-policy-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.refund-policy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.refund-policy-banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.refund-policy-text {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+}
+
+.refund-policy-text h5 {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.refund-policy-text p {
+  margin-bottom: 15px;
+}

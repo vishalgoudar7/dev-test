@@ -1,0 +1,138 @@
+/* .special-do_section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.special-heading_container {
+  margin-bottom: 30px;
+}
+
+.special-heading_container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ef5b0c;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.special-heading_container h2::before,
+.special-heading_container h2::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #ef5b0c;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.special-heading_container p {
+  font-size: 16px;
+  color: #2d2c2c;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+.special-do_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+
+.special-puja-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  height: 160px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.special-puja-card:hover {
+  transform: scale(1.05);
+}
+
+.special-img-box {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.special-detail-box h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  text-align: center;
+} */
+
+
+
+
+
+
+
+
+/* src/styles/SpecialPooja.css */
+
+.special-pooja-main {
+  background-color: #fde5d1;
+  padding: 2rem 0;
+}
+
+.section-title {
+  color: #f17300;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #333;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pooja-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pooja-card:hover {
+  transform: scale(1.05);
+}
+
+.pooja-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f17300;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.pooja-name {
+  font-weight: 600;
+  color: #000;
+}
+
